@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
@@ -15,7 +14,7 @@ export default function Weather(props) {
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png",
+      iconUrl: response.data.condition.icon_url,
       wind: response.data.wind.speed,
       city: response.data.city,
       description: response.data.condition.description,
