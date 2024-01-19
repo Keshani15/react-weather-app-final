@@ -111,6 +111,7 @@
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/293/original/8d1c415cc7016510e1578b3b300a3ce2_w200.gif?1705693317");
   background-size: cover;
   color: #000000;
+  font-weight: bold;
 }
 
 .haze {
