@@ -31,7 +31,7 @@
 }
 
 .Weather .temperature {
-  color: #212121;
+  color: #999999;
   font-size: 64px;
   line-height: 64px;
   font-weight: 400;
@@ -39,10 +39,58 @@
 }
 
 .Weather .unit {
-  color: #212121;
+  color: #999999;
   font-size: 16px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.clear-sky-day {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/210/original/OIP.jpg?1705672517");
+  background-size: cover;
+  color: #363636;
+}
+
+.clear-sky-night {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/221/original/starry-clear-sky-night-4k-iq.jpg?1705673986");
+  background-size: cover;
+}
+
+.few-clouds-day,
+.scattered-clouds-day {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/222/original/R.gif?1705674124");
+  background-size: cover;
+  color: #363636;
+  color: #6e6d6d;
+}
+
+.few-clouds-night,
+.scattered-clouds-night {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/235/original/icegif-1542.gif?1705675617");
+  background-size: cover;
+}
+
+.broken-clouds-day,
+.broken-clouds-night {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/217/original/giphy_%281%29.gif?1705673811");
+  background-size: cover;
+  color: #000000;
+}
+
+.rain-day,
+.shower-rain-day,
+.thunderstorm-day {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/234/original/R_%281%29.gif?1705675101");
+  background-size: cover;
+  color: #363636;
+}
+
+.rain-night,
+.shower-rain-night,
+.thunderstorm-night {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/186/original/rain_night.gif?1705660313");
+  background-size: cover;
+  color: #999999;
 }

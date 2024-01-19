@@ -9,6 +9,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -37,8 +38,21 @@ export default function Weather(props) {
   }
 
   if (weatherData.ready) {
+    const currentTime = new Date().getHours();
+    let timeOfDay;
+
+    if (currentTime >= 6 && currentTime < 12) {
+      timeOfDay = "morning";
+    } else if (currentTime >= 12 && currentTime < 18) {
+      timeOfDay = "afternoon";
+    } else if (currentTime >= 18 && currentTime < 21) {
+      timeOfDay = "evening";
+    } else {
+      timeOfDay = "night";
+    }
+
     return (
-      <div className="Weather">
+      <div className={`Weather ${timeOfDay} ${weatherData.icon}`}>
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
