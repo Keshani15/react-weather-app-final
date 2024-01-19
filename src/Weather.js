@@ -37,8 +37,12 @@ export default function Weather(props) {
   }
 
   if (weatherData.ready) {
+    let weatherDescription = weatherData.description
+      .toLowerCase()
+      .replace(" ", "-");
+
     return (
-      <div className={`Weather ${weatherData.icon}`}>
+      <div className={`Weather ${weatherData.icon} ${weatherDescription}`}>
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">

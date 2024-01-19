@@ -94,3 +94,27 @@
   background-size: cover;
   color: #999999;
 }
+
+.snow-day {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/290/original/h3oGiH.gif?1705692524");
+  background-size: cover;
+  color: #000000;
+}
+
+.snow-night {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/261/original/419e974e5b946cc9854be1d8d3ec8513.gif?1705690025");
+  background-size: cover;
+}
+
+.mist-day,
+.fog {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/293/original/8d1c415cc7016510e1578b3b300a3ce2_w200.gif?1705693317");
+  background-size: cover;
+  color: #000000;
+}
+
+.haze {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/293/original/8d1c415cc7016510e1578b3b300a3ce2_w200.gif?1705693317");
+  background-size: cover;
+  color: #000000;
+}
